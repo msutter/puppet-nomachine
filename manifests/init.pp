@@ -2,13 +2,13 @@
 #
 # Examples
 #
-#   include opennx
-class opennx (
-  $version = '0.16.0.729',
+#   include nomachine
+class nomachine (
+  $version = '5.0.47_1',
 ){
-  package { 'OpenNx':
+  package { 'NoMachine':
     ensure   => 'installed',
     provider => 'pkgdmg',
-    source   => "http://freefr.dl.sourceforge.net/project/opennx/opennx/CI/OpenNX-${version}.dmg"
+    source   => "http://download.nomachine.com/download/5.0/MacOSX/nomachine_${version}.dmg"
   }
 }

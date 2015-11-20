@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe 'opennx' do
+describe 'nomachine' do
   it do
-    should contain_package('OpenNx').with({
+    should contain_package('NoMachine').with({
       :ensure   => 'installed',
       :provider => 'pkgdmg'
     })
